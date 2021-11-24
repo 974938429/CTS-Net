@@ -3,7 +3,7 @@ The links of the CTS-Net parameters is (on BaiduNetdisk) : https://pan.baidu.com
 
 Extraction code:x3qw
 
-And HS dataset is : 
+And HS dataset is (on BaiduNetdisk) : 
 
 Extraction code
 
