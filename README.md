@@ -9,8 +9,6 @@ We generate 2.8w images on COCO and Casia I (casia_au_and_casia_template_after_d
 # Notation:
 Please download the parameters of model first, and put the 'parameters' folder same with other folders, and then run the PY file in the test folder. During the running process, the results of the two stages can be presented, and the final results can be found in the 'results' folder.
 
-# HS dataset
-We generate a deceptive and highly simulated dataset (HS dataset) for tampered edges detection task. It contains splicing and copy-move images with a total of 7.3W, including samples are post-processed or spliced by Photoshop. The size of every image is 320*320. Thank to the special annotation, HS dataset can not only be used for tampered edges detection task, but also can be applied to the task of tampered area detection. However, there is ambiguity problem in the latter task, we do not recommend using HS dataset in that way.
 
 # Feathering effect
 ![image](https://user-images.githubusercontent.com/73570008/151310727-02e5af0a-afdc-43d1-96b7-d25a1a961ce1.png)
@@ -25,3 +23,7 @@ We also tested on Casia II, as shown in above table, CTS-Net trained by Photosho
 ## Columbia
 
 ## In-The-Wild
+![image](https://user-images.githubusercontent.com/73570008/151360172-e3f5f368-0f36-4422-b532-3c956d34dea2.png)
+
+# HS dataset
+We generate a deceptive and highly simulated dataset (HS dataset) for tampered edges detection task. It contains splicing and copy-move images with a total of 7.3W, including samples are post-processed or spliced by Photoshop. The size of every image is 320*320. Thank to the special annotation, HS dataset can not only be used for tampered edges detection task, but also can be applied to the task of tampered area detection. However, there is ambiguity problem in the latter task, we do not recommend using HS dataset in that way.
