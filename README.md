@@ -21,9 +21,15 @@ We also tested on Casia II, as shown in above table, CTS-Net trained by Photosho
 
 # More results on Columbia and In-The-Wild dataset
 ## Columbia
+![image](https://user-images.githubusercontent.com/73570008/151368152-55c863bc-25b7-4d3e-8f4d-d767f48a089f.png)
 
 ## In-The-Wild
+As shown in the image below, false positives occur in tampered band prediction but not in tampered edges prediction. It shows the refined stage discriminates the tampered band prediction more strictly to avoid false detection as much as possible.
 ![image](https://user-images.githubusercontent.com/73570008/151360172-e3f5f368-0f36-4422-b532-3c956d34dea2.png)
 
 # HS dataset
-We generate a deceptive and highly simulated dataset (HS dataset) for tampered edges detection task. It contains splicing and copy-move images with a total of 7.3W, including samples are post-processed or spliced by Photoshop. The size of every image is 320*320. Thank to the special annotation, HS dataset can not only be used for tampered edges detection task, but also can be applied to the task of tampered area detection. However, there is ambiguity problem in the latter task, we do not recommend using HS dataset in that way.
+We generate a deceptive and highly simulated dataset (HS dataset) for tampered edges detection task. The size of every image is 320*320. Thank to the special annotation, HS dataset can not only be used for tampered edges detection task, but also can be applied to the task of tampered area detection. However, there is ambiguity problem in the latter task, we do not recommend using HS dataset in that way.
+![image](https://user-images.githubusercontent.com/73570008/151368997-26baaaea-5a0f-410a-a695-b5c867045c64.png)
+As shown in above image, there are four parts in the corresponding mask. Part A, B, C and D has the value of 50, 255, 100 and 0 respectively. Part B is the inner edge, and C is the outer edge, they jointly form the tampered edges. In CTS-Net, we take them as detection target and generate ground truth from that, set area B and area C to 255, and other parts to 0. 
+In addition, if you want to use HS dataset in tampered area detection and localization task, though we do not recommend that, the only thing you need to do is setting part A and B to 255, other parts to 0. We believe HS dataset with deceptive and highly simulated samples will help in your work on forgery detection task.
+
