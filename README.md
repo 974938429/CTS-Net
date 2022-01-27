@@ -9,6 +9,9 @@ We generate 2.8w images on COCO and Casia I (casia_au_and_casia_template_after_d
 # Notation:
 Please download the parameters of model first, and put the 'parameters' folder same with other folders, and then run the PY file in the test folder. During the running process, the results of the two stages can be presented, and the final results can be found in the 'results' folder.
 
+# HS dataset
+We generate a deceptive and highly simulated dataset (HS dataset) for tampered edges detection task. It contains splicing and copy-move images with a total of 7.3W, including samples are post-processed or spliced by Photoshop. The size of every image is 320*320. Thank to the special annotation, HS dataset can not only be used for tampered edges detection task, but also can be applied to the task of tampered area detection. However, there is ambiguity problem in the latter task, we do not recommend using HS dataset in that way.
+
 # Feathering effect
 ![image](https://user-images.githubusercontent.com/73570008/151310727-02e5af0a-afdc-43d1-96b7-d25a1a961ce1.png)
 In the above image, the spider is cropped by Photoshop. When you zoom in locally, there is a translucent edge around contour. When you paste the spider in image, the translucent edge will overlap with the authentic pixels at the corresponding position. If neighboring pixels have similar colors, the translucent edge will weaken the unnatural transition between two parts, which is the feathering effect.
@@ -17,6 +20,7 @@ CTS-Net detects splicing trace with double-edge representation, in other words, 
 ![image](https://user-images.githubusercontent.com/73570008/151317428-61d763dc-6b0b-4355-af73-95eb45a7fd76.png)
 
 We also tested on Casia II, as shown in above table, CTS-Net trained by Photoshop processed samples performed better in F1, Precision and Precision than before.
+
 # More results on Columbia and In-The-Wild dataset
 ## Columbia
 
