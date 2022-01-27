@@ -13,6 +13,6 @@ Please download the parameters of model first, and put the 'parameters' folder s
 # Feathering effect
 ![image](https://user-images.githubusercontent.com/73570008/151310727-02e5af0a-afdc-43d1-96b7-d25a1a961ce1.png)
 In the above image, the spider is cropped by Photoshop. When you zoom in locally, there is a translucent edge around contour. When you paste the spider in image, the translucent edge will overlap with the authentic pixels at the corresponding position. If neighboring pixels have similar colors, the translucent edge will weaken the unnatural transition between two parts, which is the feathering effect.
-
+CTS-Net detects splicing trace with double-edge representation, in other words, ours focuses on the unnatural transition of pixel mutation. Therefore, splicing image processed by Photoshop is a great challenge for CTS-Net. We code to utilize Photoshop software and synthesize 3037 training data images and 2026 test images to try CTS-Net as hard samples.
 
 # More results on Columbia and In-The-Wild
