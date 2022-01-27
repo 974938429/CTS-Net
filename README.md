@@ -4,7 +4,9 @@ The links of the CTS-Net parameters is (on BaiduNetdisk) : https://pan.baidu.com
 Extraction code:x3qw
 
 And HS dataset is (on BaiduNetdisk) : https://pan.baidu.com/s/1L6ZKSJcPUg1KNX9hc606cw?pwd=sqrd
+
 Extraction code:sqrd
+
 We generate 2.8w images on COCO and Casia I (casia_au_and_casia_template_after_divide, coco_casia_template_after_divide, coco_cm and coco_sp), 2.8w images on COD10K and STEX (COD10K and periodic_texture), and 1.6W images are post-processing (COD10K_new_tampered is processed by Photoshop, blur_data is processed by Gaussian blur, and casia_au_and_casia_jpegcompress is processed JPEG compression), and 7.2w images in total. Negative is image without splicing and corresponding ground truth is all-black image, you can use negative_gt.bmp as well. In the public_dataset, we use Casia and Coverage for testing. 
 
 # Notation:
