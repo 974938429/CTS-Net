@@ -17,4 +17,7 @@ CTS-Net detects splicing trace with double-edge representation, in other words, 
 ![image](https://user-images.githubusercontent.com/73570008/151317428-61d763dc-6b0b-4355-af73-95eb45a7fd76.png)
 
 We also tested on Casia II, as shown in above table, CTS-Net trained by Photoshop processed samples performed better in F1, Precision and Precision than before.
-# More results on Columbia and In-The-Wild
+# More results on Columbia and In-The-Wild dataset
+## Columbia
+
+## In-The-Wild
